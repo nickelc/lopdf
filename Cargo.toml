@@ -46,5 +46,10 @@ name = "hex_char"
 harness = false
 required-features = ["nom"]
 
+[[bench]]
+name = "name"
+harness = false
+required-features = ["nom"]
+
 [badges]
 travis-ci = { repository = "J-F-Liu/lopdf" }

@@ -58,7 +58,7 @@ fn hex_char_take2_verify_slice_std(input: &[u8]) -> Result<u8> {
     preceded(tag("#"), parser)(input)
 }
 
-fn hex_char_take3_verify_match(input: &[u8]) -> Result<u8> {
+pub fn hex_char_take3_verify_match(input: &[u8]) -> Result<u8> {
     let check = |b: &[u8]| match b {
         [b'#', a, b] if a.is_ascii_hexdigit() && b.is_ascii_hexdigit() => true,
         _ => false,
